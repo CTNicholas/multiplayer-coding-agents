@@ -1,3 +1,5 @@
+https://github.com/user-attachments/assets/8f1d8567-f9fb-41bb-a6a0-b2ff98a13f25
+
 ## Multiplayer coding agents
 
 This demo shows you how to implement a multiplayer coding-agent chat, in the
