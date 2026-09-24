@@ -8,32 +8,16 @@ team signs in with GitHub, talks to a Cursor cloud agent together, and
 [Jev](https://typesafe.ai/) decides per message whether the agent should stay
 out, answer quickly, or start coding.
 
-- **Shared chats**: each chat is a Liveblocks Feed backed by a durable Cursor
-  cloud agent; everyone sees tool calls and text stream in live, with presence
-  and typing indicators.
-- **Queue and merge**: messages posted while the agent is busy are queued and
-  handled as a follow-up on the same agent, with one reply at the bottom.
-- **Jev triage**: TypeSafe AI's evaluation model reads each message with the
-  recent conversation and picks nothing, a quick answer, or a coding session;
-  `@AI` forces a response.
-- **Quick answers**: questions are answered in seconds by the chat's model via
-  the AI SDK and Vercel AI Gateway, with read-only tools to browse the
-  repository, search code, list commits, and read the agent's diff.
-- **Coding sessions**: change requests start the Cursor agent, which commits,
-  pushes, and opens a pull request credited to the people who asked.
-- **Changes and PR tabs**: a side panel shows the agent's diff (rendered with
-  `@pierre/diffs`) and the pull request description from GitHub.
-- **Multiplayer documents**: the agent can write Markdown documents instead of
-  code; they open as collaborative Tiptap editors backed by Liveblocks Storage,
-  and the agent's later edits are merged block by block around people's changes.
-- **Skills**: reusable instructions picked with `/`; drop a `SKILL.md` into
-  `skills/<id>/` to add one.
-- **Repositories on demand**: start a chat with or without a repository; attach
-  one later, after which it's fixed.
-- **Notifications**: everyone who took part in a chat gets an inbox notification
-  when the agent finishes.
-- **Access control**: members of your GitHub organization (or an allow-list) can
-  talk to the agent; anyone else who signs in can watch.
+- **Shared chats**: Each chat is a multiplayer Liveblocks Feed.
+- **Queue and merge**: Messages posted while the agent is busy are queued and handled as a follow-up.
+- **Jev triage**: TypeSafe AI chooses whether a response to each message is needed—a coding agent, or just a regular AI.
+- **Quick answers**: Questions are answered with read-only tools to browse the repository.
+- **Coding sessions**: A Cursor agent commits, pushes, and opens a pull request of requested changes.
+- **Changes and PR tabs**: Side panel shows the PR's diff rendered with `@pierre/diffs`.
+- **Multiplayer documents**: Write Markdown documents as well as code, and edit them in a multiplayer markdown editor.
+- **Skills**: Place skils into the `/skills` folder, load them with `/`.
+- **Notifications**: Participants receieve a notification when the agent has completed coding.
+- **Access control**: Members of your GitHub organization, and users on the allow-list, can talk to the agent.
 
 ### Set up
 
