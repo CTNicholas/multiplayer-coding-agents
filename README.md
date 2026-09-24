@@ -2,11 +2,7 @@ https://github.com/user-attachments/assets/8f1d8567-f9fb-41bb-a6a0-b2ff98a13f25
 
 ## Multiplayer coding agents
 
-This demo shows you how to implement a multiplayer coding-agent chat, in the
-style of Cursor agents or Codex, with [Liveblocks](https://liveblocks.io/). Your
-team signs in with GitHub, talks to a Cursor cloud agent together, and
-[Jev](https://typesafe.ai/) decides per message whether the agent should stay
-out, answer quickly, or start coding.
+This demo shows you how to implement a multiplayer coding agent tool, with [Liveblocks](https://liveblocks.io/).
 
 - **Shared chats**: Each chat is a multiplayer Liveblocks Feed.
 - **Queue and merge**: Messages posted while the agent is busy are queued and handled as a follow-up.
